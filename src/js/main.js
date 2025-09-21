@@ -15,7 +15,6 @@ window.addEventListener('scroll', function() {
 hamburger.addEventListener("click", () => {
   mobileMenu.classList.remove("hidden");
   menuView.classList.add("hidden");
-
 });
 
 closeBtn.addEventListener("click", () => {

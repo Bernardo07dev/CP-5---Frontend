@@ -29,7 +29,7 @@
 
     <!-- Hamburger -->
     <div id="menu-view" class="w-full flex lg:hidden flex-row justify-between  py-6 items-center fixed z-50 backdrop-blur-md bg-white/5">
-        <div class="pl-12">
+        <div class="pl-6">
             <button id="hamburger" class="border border-white rounded-lg p-3">
                 <i class="fa-solid fa-bars text-white"></i>
             </button>
@@ -38,7 +38,7 @@
     </div>
 
     <!-- menu mobile -->
-    <div id="mobile-menu" class="hidden pl-[10%] pt-4 fixed top-0 left-0 h-full w-[80%] md:hidden min-h-screen flex-col justify-center bg-black/80 text-white transition-all duration-300">
+    <div id="mobile-menu" class="hidden pl-[7%] pt-4 fixed top-0 left-0 h-full w-[80%] md:hidden min-h-screen flex-col justify-center bg-black/80 text-white transition-all duration-300">
         <div class="pt-12 mb-8">
             <button id="close" class="border border-white rounded-lg p-3">
                 <i class="fa-solid fa-xmark"></i>
@@ -61,15 +61,15 @@
     <main class="w-full mx-auto flex flex-col items-center justify-center">
 
         <!-- Hero Section -->
-        <section class="w-full pt-[200px] flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:pt-[200px] lg:pb-32 bg-[url('src/images/fundo1.png')] bg-cover bg-center lg:mb-20 lg:px-[15%] pb-24">
-            <div class="flex flex-col items-center justify-between gap-8 lg:flex-row w-full max-w-[1420px] mx-auto">
-                <div class="w-[50%] flex flex-col gap-4">
-                    <h1 class="text-white text-3xl text-center lg:text-left lg:text-5xl font-semibold ">A batida que combina <span class="text-[#FB6202]">com você</span></h1>
-                    <p class="text-white">Descubra, crie e viva experiências sonoras únicas.Um app feito para quem não apenas ouve, mas sente a música.</p>
-                    <button class="w-[30%] bg-[#FB6202] text-sm text-white py-3 px-4 rounded-full">Ouvir Agora</button>
+        <section class="w-full pt-[200px] flex flex-col lg:flex-row items-center lg:justify-between lg:pt-[200px] lg:pb-32 bg-[url('src/images/fundo1.png')] bg-cover bg-center lg:mb-20 lg:px-[15%] pb-24">
+            <div class="flex flex-col items-center justify-between gap-8 lg:flex-row w-full max-w-[1420px] ">
+                <div class="w-full lg:w-[100%] flex flex-col gap-4 text-center lg:text-left justify-center align-center lg:mx-[0px] mx-[15%]">
+                    <h1 class="text-white lg:text-left text-4xl lg:mx-[0px] lg:text-5xl font-semibold mx-[5%]">A batida que combina <span class="text-[#FB6202]">com você</span></h1>
+                    <p class="text-white lg:mx-[0px] mx-[5%]">Descubra, crie e viva experiências sonoras únicas.Um app feito para quem não apenas ouve, mas sente a música.</p>
+                    <button class="bg-[#FB6202] lg:w-[40%] lg:mx-[0px] text-white py-3 rounded-full mx-[25%]">Ouvir Agora</button>
                 </div>
-                <div class="w-[50%]">
-                    <div class="w-full aspect-video">
+                <div class="lg:w-[100%] w-[90%] flex justify-center align-center">
+                    <div class="lg:w-full aspect-video w-[90%]">
                         <iframe 
                         class="w-full h-full rounded-xl overflow-hidden shadow-[0_0_40px_rgba(251,98,2,0.2)]"
                         src="https://www.youtube.com/embed/MCLVhRjIvys"
@@ -117,28 +117,28 @@
         <!-- Funcionalidades -->
         <section id="funcionalidades" class="w-full max-w-[1420px] mx-auto flex flex-col align-center justify-center mb-32 gap-16 px-6 lg:px-[20%]">
             <h1 class="text-white text-4xl font-light text-center">Funcionalidades</h1>
-            <div class="flex flex-row align-center justify-center gap-10 text-white">
-                <div class="flex flex-col gap-2 w-[50%]">
+            <div class="flex flex-col sm:flex-row align-center justify-center gap-10 text-white sm:mx-[0px] mx-[5%]">
+                <div class="flex flex-col gap-2 sm:w-[50%]">
                     <img class="mb-6" src="src/images/cria.png" alt="">
-                    <h3 class="text-xl font-normal">Criação ilimitada de playlists.</h3>
-                    <p class="font-extralight text-sm">Você poderá criar playlists de forma totalmente ilimitada</p>
+                    <h3 class="text-2xl sm:text-xl font-normal">Criação ilimitada de playlists.</h3>
+                    <p class="font-extralight text-base sm:text-sm">Você poderá criar playlists de forma totalmente ilimitada</p>
                 </div>
-                <div class="flex flex-col gap-2 w-[50%]">
+                <div class="flex flex-col gap-2 sm:w-[50%]">
                     <img class="mb-6" src="src/images/atua.png" alt="">
-                    <h3 class="text-xl font-normal">Atualizações constantes com novidades musicais.</h3>
-                    <p class="font-extralight text-sm">Nós sempre nos atualizamos com novidades do mundo musical</p>
+                    <h3 class="text-2xl sm:text-xl font-normal">Atualizações constantes com novidades musicais.</h3>
+                    <p class="font-extralight text-base sm:text-sm">Nós sempre nos atualizamos com novidades do mundo musical</p>
                 </div>
             </div>
-            <div class="flex flex-row align-center justify-center gap-20 text-white">
-                <div class="flex flex-col gap-2 w-[50%]">
+            <div class="flex flex-col sm:flex-row align-center justify-center gap-20 text-white sm:mx-[0px] mx-[5%]">
+                <div class="flex flex-col gap-2 sm:w-[50%]">
                     <img class="mb-6" src="src/images/busca.png" alt="">
-                    <h3 class="text-xl font-normal">Busca inteligente por estilos, moods e artistas</h3>
-                    <p class="font-extralight text-sm">Busque seu artista de forma inteligente com nossa algoritmo</p>
+                    <h3 class="text-2xl sm:text-xl font-normal">Busca inteligente por estilos, moods e artistas</h3>
+                    <p class="font-extralight text-base sm:text-sm">Busque seu artista de forma inteligente com nossa algoritmo</p>
                 </div>
-                <div class="flex flex-col gap-2 w-[50%]">
+                <div class="flex flex-col gap-2 sm:w-[50%]">
                     <img class="mb-6" src="src/images/desta.png" alt="">
-                    <h3 class="text-xl font-normal">Destaque para artistas independentes.</h3>
-                    <p class="font-extralight text-sm">Aqui nós damos oportunidade e priorizamos artistas independentes</p>
+                    <h3 class="text-2xl sm:text-xl font-normal">Destaque para artistas independentes.</h3>
+                    <p class="font-extralight text-base sm:text-sm">Aqui nós damos oportunidade e priorizamos artistas independentes</p>
                 </div>
             </div>
         </section>
@@ -146,7 +146,7 @@
         <!-- Depoimentos -->
         <section id="depoimentos" class="w-full max-w-[1420px] mx-auto flex flex-col align-center justify-center mb-32 gap-10 px-6 lg:px-[15%]">
             <h1 class="text-white text-4xl font-light text-center lg:text-left">Depoimentos</h1>
-            <div class="flex flex-col align-center justify-center lg:flex-row gap-4 mt-4 mx-[15%] lg:mx-0">
+            <div class="flex flex-col align-center justify-center lg:flex-row gap-4 mt-4 mx-[10%] lg:mx-0">
                 <div class="flex flex-col gap-2 text-white lg:w-[25%] border border border-[rgba(255,255,255,0.2)] p-8 rounded-lg">
                     <div class="bg-[url('src/images/dep1.jpg')] bg-cover bg-center rounded-full h-[50px] w-[50px]"></div>
                     <p class="font-extralight text-sm">“O Melodia mudou a forma como eu escuto música. Agora minhas playlists parecem feitas sob medida pra mim!”</p>
@@ -171,7 +171,7 @@
         </section>
 
         <!-- Formulario de Contato -->
-         <section id="fale" class="w-[40%] flex flex-col align-center justify-center mb-32">
+         <section id="fale" class="lg:w-[40%] flex flex-col align-center justify-center mb-32 lg:mx-0 mx-[10%]">
             <h1 class="text-white text-4xl font-light text-center">Fale Conosco!</h1>
             <p class="text-sm text-center text-white font-light mb-6 mt-2 mx-8">Entre em contato e fique por dentro de todas as novidades! Tire suas dúvidas e fale conosco, nós estamos aqui para ajudar.</p>
             <form class="flex justify-center align-center" action="">
