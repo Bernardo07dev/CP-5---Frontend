@@ -11,8 +11,9 @@
 </head>
 <body class="bg-[#111111]">
     <!-- menu -->
-    <header class="flex flex-row justify-between px-24 py-8 items-center">
-        <div><img class="w-[60%] mt-[-6px]" src="src/icons/logo-umelody.svg" alt=""></div>
+    <header id="menu" class="w-full hidden lg:flex flex-row justify-between px-24 py-6 items-center fixed transition-all duration-300 z-40">
+        <!-- menu computador -->
+        <div class=""><img class="w-[60%] mt-[-6px]" src="src/icons/logo-umelody.svg" alt=""></div>
         <div>
             <ul class="flex flex-row gap-8 text-sm">
                 <li class="text-white"><a href="#nossos">Benefícios</a></li>
@@ -26,25 +27,58 @@
         </div>
     </header>
 
+    <!-- Hamburger -->
+    <div id="menu-view" class="w-full flex lg:hidden flex-row justify-between px-6 py-6 items-center fixed z-50 backdrop-blur-md bg-white/5">
+        <div class="pl-4">
+            <button id="hamburger" class="border border-white rounded-lg p-3">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+        </div>
+        <div><img class="w-[80%] " src="src/icons/logo-umelody.svg" alt=""></div>
+    </div>
+
+    <!-- menu mobile -->
+    <div id="mobile-menu" class="hidden pl-12 pt-4 fixed top-0 right-0 left-0 h-full w-[80%] md:hidden min-h-screen flex-col justify-center bg-black/80 text-white transition-all duration-300">
+        <div class="pt-12 mb-8">
+            <button id="close" class="border border-white rounded-lg p-3">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="w-full flex flex-col text-left gap-8 mb-10">
+            <a class="text-white" href="#nossos">Benefícios</a>
+            <a class="text-white" href="#funcionalidades">Funcionalidades</a>
+            <a class="text-white" href="#depoimentos">Depoimentos</a>
+            <a class="text-white" href="#fale">Fale Conosco</a>
+        </div>
+
+        <div>
+            <button class="bg-white text-sm py-2 px-4 rounded-full text-black">Cadastre-se</button>
+        </div>
+    </div>
+
+
     <main class="w-full mx-auto flex flex-col items-center justify-center">
 
         <!-- Hero Section -->
-        <section class="w-[70%] flex flex-row items-center justify-between gap-8 pt-28 pb-32 bg-[url('src/images/fundo1.png')] bg-cover bg-center mb-20">
-            <div class="w-[50%] flex flex-col gap-4">
-                <h1 class="text-white text-5xl font-semibold ">A batida que combina <span class="text-[#FB6202]">com você</span></h1>
-                <p class="text-white">Descubra, crie e viva experiências sonoras únicas.Um app feito para quem não apenas ouve, mas sente a música.</p>
-                <button class="w-[30%] bg-[#FB6202] text-sm text-white py-3 px-4 rounded-full">Ouvir Agora</button>
-            </div>
-            <div class="w-[50%]">
-                <div class="w-full aspect-video">
-                    <iframe 
-                    class="w-full h-full rounded-xl overflow-hidden shadow-[0_0_40px_rgba(251,98,2,0.2)]"
-                    src="https://www.youtube.com/embed/MCLVhRjIvys"
-                    title="Vídeo demo"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                    </iframe>
+        <section class="w-full pt-[200px] flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:pt-[200px] lg:pb-32 bg-[url('src/images/fundo1.png')] bg-cover bg-center lg:mb-20">
+            <div class="flex flex-col items-center justify-between gap-8 lg:flex-row lg:w-[70%] lg:mx-auto">
+                <div class="w-[50%] flex flex-col gap-4">
+                    <h1 class="text-white text-2xl lg:text-5xl font-semibold ">A batida que combina <span class="text-[#FB6202]">com você</span></h1>
+                    <p class="text-white">Descubra, crie e viva experiências sonoras únicas.Um app feito para quem não apenas ouve, mas sente a música.</p>
+                    <button class="w-[30%] bg-[#FB6202] text-sm text-white py-3 px-4 rounded-full">Ouvir Agora</button>
+                </div>
+                <div class="w-[50%]">
+                    <div class="w-full aspect-video">
+                        <iframe 
+                        class="w-full h-full rounded-xl overflow-hidden shadow-[0_0_40px_rgba(251,98,2,0.2)]"
+                        src="https://www.youtube.com/embed/MCLVhRjIvys"
+                        title="Vídeo demo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </section>
