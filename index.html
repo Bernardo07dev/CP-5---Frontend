@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1fe05c9c4d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Umelody</title>
 </head>
 <body class="bg-[#111111]">
     <!-- menu -->
     <header class="flex flex-row justify-between px-24 py-8 items-center">
-        <div><img class="w-[60%] mt-[-6px]" src="/src/icons/logo-umelody.svg" alt=""></div>
+        <div><img class="w-[60%] mt-[-6px]" src="src/icons/logo-umelody.svg" alt=""></div>
         <div>
             <ul class="flex flex-row gap-8 text-sm">
-                <li class="text-white"><a href="">Nosso App</a></li>
-                <li class="text-white"><a href="">Benefícios</a></li>
-                <li class="text-white"><a href="">Depoimentos</a></li>
-                <li class="text-white"><a href="">Fale Conosco</a></li>
+                <li class="text-white"><a href="#nossos">Benefícios</a></li>
+                <li class="text-white"><a href="#funcionalidades">Funcionalidades</a></li>
+                <li class="text-white"><a href="#depoimentos">Depoimentos</a></li>
+                <li class="text-white"><a href="#fale">Fale Conosco</a></li>
             </ul>
         </div>
         <div>
@@ -25,18 +26,142 @@
         </div>
     </header>
 
-    <main class="px-32">
+    <main class="w-full mx-auto flex flex-col items-center justify-center">
+
         <!-- Hero Section -->
-        <section class="flex flex-row gap-8 py-20 px-20">
-            <div class="flex flex-col">
-                <h1 class="text-white text-5xl font-bold">A batida que combina com você</h1>
+        <section class="w-[70%] flex flex-row items-center justify-between gap-8 pt-28 pb-32 bg-[url('src/images/fundo1.png')] bg-cover bg-center mb-20">
+            <div class="w-[50%] flex flex-col gap-4">
+                <h1 class="text-white text-5xl font-semibold ">A batida que combina <span class="text-[#FB6202]">com você</span></h1>
                 <p class="text-white">Descubra, crie e viva experiências sonoras únicas.Um app feito para quem não apenas ouve, mas sente a música.</p>
+                <button class="w-[30%] bg-[#FB6202] text-sm text-white py-3 px-4 rounded-full">Ouvir Agora</button>
             </div>
-            <div> <iframe width="560" height="315" src="https://www.youtube.com/embed/MCLVhRjIvys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+            <div class="w-[50%]">
+                <div class="w-full aspect-video">
+                    <iframe 
+                    class="w-full h-full rounded-xl overflow-hidden shadow-[0_0_40px_rgba(251,98,2,0.2)]"
+                    src="https://www.youtube.com/embed/MCLVhRjIvys"
+                    title="Vídeo demo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </section>
+
+        <!-- Nossos Benefícios -->
+        <section id="nossos" class="w-full flex align-top justify-center mb-32">
+            <div class="w-[60%] flex flex-col text-center align-center justify-center">
+                <h1 class="text-white text-4xl font-light mb-4">Nossos Benefícios</h1>
+                <div class="flex flex-row gap-4 my-5">
+                    <div class="w-[50%] bg-[rgba(217,217,217,0.05)] text-white py-8 px-12 rounded-lg gap-8 text-left border border-solid border-[rgba(255,255,255,0.2)]">
+                        <div class="bg-[rgba(217,217,217,0.31)] w-[20%] h-auto flex justify-center align-center mb-2 py-5 rounded-full"><i class="fa-regular fa-headphones text-white text-xl"></i></div>
+                        <h3 class="text-xl font-normal">Qualidade de som superior</h3>
+                        <p class="font-extralight text-sm">ouça cada detalhe como se estivesse em um show ao vivo.</p>
+                    </div>
+                    <div class="w-[50%] bg-[rgba(217,217,217,0.05)] text-white py-8 px-12 rounded-lg gap-8 text-left border border-solid border-[rgba(255,255,255,0.2)]">
+                        <div class="bg-[rgba(217,217,217,0.31)] w-[20%] h-auto flex justify-center align-center mb-2 py-5 rounded-full"><i class="fa-solid fa-wand-sparkles text-white text-xl"></i></div>
+                        <h3 class="text-xl font-normal">Descoberta de artistas</h3>
+                        <p class="font-extralight text-sm">encontre novos talentos e músicas antes de todo mundo.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-4">
+                    <div class="w-[50%] bg-[rgba(217,217,217,0.05)] text-white py-8 px-12 rounded-lg gap-8 text-left border border-solid border-[rgba(255,255,255,0.2)]">
+                        <div class="bg-[rgba(217,217,217,0.31)] w-[20%] h-auto flex justify-center align-center mb-2 py-5 rounded-full"><i class="fa-solid fa-list-ol text-white text-xl"></i></div>
+                        <h3 class="text-xl font-normal">Playlists personalizadas</h3>
+                        <p class="font-extralight text-sm">o algoritmo entende você e cria a trilha sonora perfeita.</p>
+                    </div>
+                    <div class="w-[50%] bg-[rgba(217,217,217,0.05)] text-white py-8 px-12 rounded-lg gap-8 text-left border border-solid border-[rgba(255,255,255,0.2)]">
+                        <div class="bg-[rgba(217,217,217,0.31)] w-[20%] h-auto flex justify-center align-center mb-2 py-5 rounded-full"><i class="fa-solid fa-mobile text-white text-xl"></i></div>
+                        <h3 class="text-xl font-normal">Interface intuitiva</h3>
+                        <p class="font-extralight text-sm">navegue facilmente e encontre suas músicas favoritas.</p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Funcionalidades -->
+        <section id="funcionalidades" class="w-[50%] flex flex-col align-center justify-center mb-32 gap-16">
+            <h1 class="text-white text-4xl font-light text-center">Funcionalidades</h1>
+            <div class="flex flex-row align-center justify-center gap-10 text-white">
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <img class="mb-6" src="src/images/cria.png" alt="">
+                    <h3 class="text-xl font-normal">Criação ilimitada de playlists.</h3>
+                    <p class="font-extralight text-sm">Você poderá criar playlists de forma totalmente ilimitada</p>
+                </div>
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <img class="mb-6" src="src/images/atua.png" alt="">
+                    <h3 class="text-xl font-normal">Atualizações constantes com novidades musicais.</h3>
+                    <p class="font-extralight text-sm">Nós sempre nos atualizamos com novidades do mundo musical</p>
+                </div>
+            </div>
+            <div class="flex flex-row align-center justify-center gap-20 text-white">
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <img class="mb-6" src="src/images/busca.png" alt="">
+                    <h3 class="text-xl font-normal">Busca inteligente por estilos, moods e artistas</h3>
+                    <p class="font-extralight text-sm">Busque seu artista de forma inteligente com nossa algoritmo</p>
+                </div>
+                <div class="flex flex-col gap-2 w-[50%]">
+                    <img class="mb-6" src="src/images/desta.png" alt="">
+                    <h3 class="text-xl font-normal">Destaque para artistas independentes.</h3>
+                    <p class="font-extralight text-sm">Aqui nós damos oportunidade e priorizamos artistas independentes</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="w-[70%] flex flex-col align-center justify-center mb-32 gap-10">
+            <h1 class="text-white text-4xl font-light text-left">Depoimentos</h1>
+            <div class="flex flex-row gap-4 mt-4">
+                <div class="flex flex-col gap-2 text-white w-[25%] border border border-[rgba(255,255,255,0.2)] p-8 rounded-lg">
+                    <div class="bg-[url('src/images/dep1.jpg')] bg-cover bg-center rounded-full h-[50px] w-[50px]"></div>
+                    <p class="font-extralight text-sm">“O Melodia mudou a forma como eu escuto música. Agora minhas playlists parecem feitas sob medida pra mim!”</p>
+                    <h3 class="text-[14px] font-normal">João, 21 anos</h3>
+                </div>
+                <div class="flex flex-col gap-2 text-white w-[25%] border border border-[rgba(255,255,255,0.2)] p-8 rounded-lg">
+                    <div class="bg-[url('src/images/dep2.jpg')] bg-cover bg-center rounded-full h-[50px] w-[50px]"></div>
+                    <p class="font-extralight text-sm">“O app é viciante! Todo dia descubro uma música nova que parece que foi feita pra mim”</p>
+                    <h3 class="text-[14px] font-normal">Maria, 24 anos</h3>
+                </div>
+                <div class="flex flex-col gap-2 text-white w-[25%] border border border-[rgba(255,255,255,0.2)] p-8 rounded-lg">
+                    <div class="bg-[url('src/images/dep3.jpg')] bg-cover bg-center rounded-full h-[50px] w-[50px]"></div>
+                    <p class="font-extralight text-sm">“Antes eu passava horas montando playlist, agora o Melodia faz isso sozinho e ainda acerta no meu gosto.”</p>
+                    <h3 class="text-[14px] font-normal">Ana, 19 anos</h3>
+                </div>
+                <div class="flex flex-col gap-2 text-white w-[25%] border border border-[rgba(255,255,255,0.2)] p-8 rounded-lg">
+                    <div class="bg-[url('src/images/dep4.jpg')] bg-cover bg-center rounded-full h-[50px] w-[50px]"></div>
+                    <p class="font-extralight text-sm">“A qualidade do som é absurda, parece que tô com fone profissional até no celular simples.”</p>
+                    <h3 class="text-[14px] font-normal">Lucas, 23 anos</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contato -->
+         <section id="fale" class="w-[40%] flex flex-col align-center justify-center mb-32">
+            <h1 class="text-white text-4xl font-light text-center">Fale Conosco!</h1>
+            <p class="text-sm text-center text-white font-light mb-6 mt-2 mx-8">Entre em contato e fique por dentro de todas as novidades! Tire suas dúvidas e fale conosco, nós estamos aqui para ajudar.</p>
+            <form class="flex justify-center align-center" action="">
+                <input type="email" placeholder="Seu melhor e-mail" class="w-[80%] p-4 font-[12px] rounded-xl bg-[rgba(217,217,217,0.05)] border border-solid border-[rgba(255,255,255,0.2)] text-white placeholder-[rgba(255,255,255,0.5)]">
+                <button class="bg-[#FB6202] text-sm text-white  px-8 rounded-xl ml-2">Enviar</button>
+            </form>
+         </section>
     </main>
 
-    <footer></footer>
+    <footer class="w-full flex flex-row justify-between align-center bg-[rgba(217,217,217,0.05)] py-8 px-[5%]">
+      <div class="flex flex-row justify-center align-center"><img class="w-[60%] mb-[-4px]" src="src/icons/logo-umelody.svg" alt=""></div>
+      <div class="text-white flex flex-row gap-8">
+        <ul class="flex flex-row gap-8 text-sm font-light">
+            <li><a href="">Políticas de Privacidade</a></li>
+            <li><a href="">Fale Conosco</a></li>
+        </ul>
+        <div class="flex flex-row gap-2">
+            <img class="w-[24px]" src="src/icons/insta.svg" alt="">
+            <img class="w-[24px]" src="src/icons/tik.svg" alt="">
+            <img class="w-[24px]" src="src/icons/face.svg" alt="">
+            <img class="w-[24px]" src="src/icons/link.svg" alt="">
+        </div>
+      </div>
+
+    </footer>
 
     <script src="src/js/main.js"></script>
 </body>
