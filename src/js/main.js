@@ -22,3 +22,16 @@ closeBtn.addEventListener("click", () => {
   menuView.classList.remove("hidden");
 });
 
+document.getElementById("contatoForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+
+    if(email === "") {
+        alert("Por favor, insira um e-mail válido!");
+        return;
+    }
+
+    alert("Formulário enviado com sucesso!");
+});
+
